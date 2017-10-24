@@ -1,5 +1,5 @@
 <template>
-  <div class="notification">
+  <div class="notification FeaturedWork">
 
   </div>
 </template>
