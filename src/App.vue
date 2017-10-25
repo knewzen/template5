@@ -1,11 +1,19 @@
 <template>
   <div id="app">
-      <div class="logo" >
-        <img class="logo-img" src="./assets/img/logo.svg">
-        <div style="width: 100%" class="wordmark"></div>
+      <div class="page-head flex-center">
+          <div class="banner container">
+          <div class="logo" >
+            <img class="logo-img" src="./assets/img/logo.svg">
+            <div style="width: 100%" class="wordmark"></div>
+          </div>
+
+          <!-- <div class="menu">
+            <p v-for="item in menu">{{item.name}}</p>
+          </div> -->
+
+        </div>
+        <FeaturedWork/>
       </div>
-      <Navigation/>
-      <FeaturedWork/>
 
 
 
@@ -21,7 +29,18 @@ export default {
   components: {Navigation, FeaturedWork},
   data () {
     return {
-      logoShow: false
+      msg: 'Lorem',
+      logoShow: false,
+      menu: [
+        {
+          name: 'Lorem',
+          link: ''
+        },
+        {
+          name: 'Ipsum',
+          link: ''
+        }
+      ]
     }
   }
 }
