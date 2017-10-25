@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <div class="container">
+      <div class="logo" >
+        <img class="logo-img" src="./assets/img/logo.svg">
+        <div style="width: 100%" class="wordmark"></div>
+      </div>
       <Navigation/>
       <FeaturedWork/>
-    </div>
+
 
 
   </div>
@@ -18,7 +21,7 @@ export default {
   components: {Navigation, FeaturedWork},
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      logoShow: false
     }
   }
 }
