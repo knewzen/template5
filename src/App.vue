@@ -1,7 +1,10 @@
 <template>
-  <div id="app" class="has-text-centered">
-    <Navigation/>
-    <FeaturedWork/>
+  <div id="app">
+    <div class="container">
+      <Navigation/>
+      <FeaturedWork/>
+    </div>
+
 
   </div>
 </template>
