@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+      <div class="page-head-bg">
+
+      </div>
       <div class="page-head flex-center">
           <div class="banner container">
           <div class="logo" >
@@ -7,13 +10,20 @@
             <div style="width: 100%" class="wordmark"></div>
           </div>
 
-          <!-- <div class="menu">
-            <p v-for="item in menu">{{item.name}}</p>
-          </div> -->
+
 
         </div>
-        <FeaturedWork/>
-      </div>
+
+
+
+          <div style="position: absolute; top: 220px;">
+            <div class="menu">
+              <a v-for="item in menu">{{item.name}}</a>
+            </div>
+            <FeaturedWork/>
+          </div>
+
+        </div>
 
 
 
@@ -33,11 +43,11 @@ export default {
       logoShow: false,
       menu: [
         {
-          name: 'Lorem',
+          name: 'Contact',
           link: ''
         },
         {
-          name: 'Ipsum',
+          name: 'About',
           link: ''
         }
       ]

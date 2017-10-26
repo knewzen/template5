@@ -1,13 +1,13 @@
 <template>
-  <div>
+
     <div class="box shadow FeaturedWork flex-center FeaturedWorkBackground">
       <div class="box FeaturedWorkImg" :style="{ background: fWork.background}"></div>
       <div class="text light" >
         <h2>Featured Work</h2>
-        <h4>Featured Work WorkFeatured Work WorkFeatured Work WorkFeatured Work WorkFeatured Work WorkFeatured Work Work</h4>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
       </div>
     </div>
-  </div>
+
 
 </template>
 
@@ -34,9 +34,9 @@
   background-size: cover !important;
   background-position: center !important;
 
-  opacity: 0.3;
-  transition: all .5s;
-} .FeaturedWorkImg:hover {opacity: 0.5;}
+  opacity: 0.1;
+  transition: all .9s;
+} .FeaturedWorkImg:hover {opacity: 0.3;}
 .text {
   color: white;
   position: absolute;
@@ -44,6 +44,12 @@
   flex-wrap: wrap;
   justify-content: center;
   pointer-events: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.text h2 {border-bottom: 3px solid white; margin: 0;}
+.text h2 {margin: 0;}
+.text h4 {margin-bottom: 0; width: 90%}
+@media only screen and (max-width: 768px) {
+  .text h4 {display: none;}
+}
 </style>
