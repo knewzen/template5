@@ -1,4 +1,5 @@
 @import typography
+@import mixins
 // Variables
 $gray: #888888
 $green: #02CCBA
@@ -47,22 +48,6 @@ $violet: #AA7ECD
 
 .banner
     margin-bottom: 1vh
-.menu
-  display: flex
-  flex-direction: row-reverse
-  justify-content: right
-  margin-bottom: 10px
-.menu
-  a
-    padding: 10px
-    margin: 0
-    color: #FFF
-    cursor: pointer
-    transition: all .2s
-    border-bottom: 1px solid #02CCBA
-.menu
-  a:hover
-    color: $violet
 .logo
   top: 35px
   position: absolute
@@ -89,13 +74,48 @@ $violet: #AA7ECD
   background-repeat: no-repeat
   background-position: 0 -22px
 
-// Works
+// Menu
+.menu-container
+  position: absolute
+  top: -40px
+  display: flex
+  justify-content: space-between
+  width: 100%
+  .message
+    @extend .menu
+    p
+      margin-bottom: 0 !important
+      color: white
+  .menu
+    display: flex
+    flex-direction: row-reverse
+    justify-content: right
+    margin-bottom: 10px
+  .menu
+    a
+      padding: 10px
+      margin: 0
+      color: #FFF
+      cursor: pointer
+      transition: all .2s
+      border-bottom: 1px solid #02CCBA
+  .menu
+    a:hover
+      color: $violet
 
+
+// Works
+.works
+  position: absolute
+  top: 260px
+  display: flex
+  flex-wrap: wrap
+  width: 80vw
 .FeaturedWork
   width: 80vw
   height: 40vh
   position: relative
-  background: linear-gradient(160deg, #02CCBA 0%, #AA7ECD 100%)
+  background: linear-gradient(160deg, rgb(253, 130, 71) 0%, #825cc5 100%)
 .FeaturedWorkImg
   width: 100%
   height: 100%
@@ -118,6 +138,7 @@ $violet: #AA7ECD
     margin: 0
   h4
     margin: 0
+    padding: 30px
     width: 85%
     @media only screen and (max-width: 768px)
         display: none
