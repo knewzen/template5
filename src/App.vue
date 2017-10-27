@@ -20,7 +20,9 @@
             <div class="menu">
               <a v-for="item in menu">{{item.name}}</a>
             </div>
-            <FeaturedWork/>
+            <div class="works">
+              <FeaturedWork/>
+            </div>
           </div>
 
         </div>
