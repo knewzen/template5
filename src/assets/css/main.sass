@@ -124,12 +124,26 @@ body
   z-index: 2
   font-weight: 600
   margin-top: -3em
+  transition: all 1s
+  @media only screen and (max-width: $desktop)
+    display: none
 .message_2
   transform: rotate(90deg)
   transform-origin: left top 0
   position: absolute
   left: -2%
-  top: 20%
+  top: 8vh
+.message_3
+  top: 60vh !important
+  @media only screen and (max-width: $desktop)
+    top: 50vh
+    top
+  @extend .message_2
+  .inner
+    color: $gray
+  .outer
+    color: $orange
+
 .FeaturedWork
   width: 80vw
   height: 50vh
@@ -179,8 +193,20 @@ body
   .work-box
     background: white
     width: 100%
-    margin-top: 2%
+    margin-top: 10%
+    cursor: pointer
     @extend .FeaturedWork
+    &:hover
+      .work-description
+        clip-path: circle(80% at 50% 120%)
     // Desktop
     @media only screen and (min-width: $desktop)
       width: 32%
+      margin-top: 2%
+    .work-description
+      background: white
+      width: 100%
+      height: 100%
+      opacity: 0.9
+      clip-path: circle(50% at 50% 120%)
+      transition: all .4s ease-in-out

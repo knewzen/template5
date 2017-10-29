@@ -1,8 +1,18 @@
 <template>
   <div class="works">
-    <div v-for="item in works" class="work-box box shadow flex-center FeaturedWorkBackground">{{msg}}</div>
+    <div class="message_3">
+      <p>
+          <span class="inner">Portfolio <span class="outer">/</span> Showcase</span>
+      </p>
+    </div>
 
+    <div  v-for="item in works"
+          class="work-box box shadow flex-center FeaturedWorkBackground"
+          :style="{ background: item.background}">
+          <div class="work-description">
 
+          </div>
+      </div>
     </div>
   </div>
 </template>
@@ -11,14 +21,10 @@
   export default {
     data () {
       return  {
-        msg: 'Hello World',
         works: [
-          {},
-          {},
-          {},
-          {},
-          {},
-
+          {background: "url('./src/assets/img/tk.jpg')"},
+          {background: "url('./src/assets/img/tk.jpg')"},
+          {background: "url('./src/assets/img/tk.jpg')"}
         ]
       }
     }
