@@ -6,7 +6,13 @@ $green: #02CCBA
 $orange: #ff8038
 $dark: #222
 $dark-transparent: rgba(#cfcfcf, 0.2)
+$deep-blue: rgb(51, 93, 143)
 $dark-blue: rgb(38, 41, 69)
+
+$desktop: 1000px
+
+body
+  height: 200vh
 /* Utilities */
 .container
   width: 80vw
@@ -22,10 +28,10 @@ $dark-blue: rgb(38, 41, 69)
   text-align: center
 
 .shadow
-  box-shadow: 0px 0px 15px 0px rgba(46,61,73,0.2)
+  box-shadow: 0px 0px 10px 0px rgba(46,61,73,0.2)
   transition: all .2s
 .shadow:hover
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16)
 
 
 /* Main */
@@ -45,7 +51,7 @@ $dark-blue: rgb(38, 41, 69)
   width: 100%
   height: 100%
   z-index: -2
-  background: linear-gradient(160deg, $dark 0%, rgb(51, 93, 143) 100%)
+  background: linear-gradient(160deg, $dark 0%, $deep-blue 100%)
   clip-path: polygon(100% 0%, 0 0, 100% 100%)
 
 
@@ -106,7 +112,7 @@ $dark-blue: rgb(38, 41, 69)
 
 
 // Works
-.works
+.portfolio
   position: absolute
   top: 260px
   display: flex
@@ -117,7 +123,7 @@ $dark-blue: rgb(38, 41, 69)
   position: absolute
   z-index: 2
   font-weight: 600
-  margin-top: -3em  
+  margin-top: -3em
 .message_2
   transform: rotate(90deg)
   transform-origin: left top 0
@@ -155,3 +161,20 @@ $dark-blue: rgb(38, 41, 69)
     width: 85%
     @media only screen and (max-width: 768px)
         display: none
+
+// Works
+.works
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  // Desktop
+  @media only screen and (min-width: $desktop)
+    justify-content: space-between
+  .work-box
+    background: white
+    width: 100%
+    margin-top: 20px
+    @extend .FeaturedWork
+    // Desktop
+    @media only screen and (min-width: $desktop)
+      width: calc(33.3% - 20px)
