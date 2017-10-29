@@ -7,7 +7,7 @@
       <!-- LOGO -->
           <div class="banner container">
           <div class="logo" >
-            <img class="logo-img" src="./assets/img/logo_w.svg">
+            <img class="logo-img" :src="logo">
             <div style="width: 100%" class="wordmark"></div>
           </div>
         </div>
@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import Navigation from './assets/components/Navigation.vue';
-import FeaturedWork from './assets/components/FeaturedWork.vue'
-import Works from './assets/components/Works.vue'
+import Navigation from './components/Navigation.vue';
+import FeaturedWork from './components/FeaturedWork.vue'
+import Works from './components/Works.vue'
 
 
 export default {
@@ -39,6 +39,7 @@ export default {
   components: {Navigation, FeaturedWork, Works, Works},
   data () {
     return {
+      logo: './src/assets/img/logo_w.svg',
       msg: 'Lorem',
       logoShow: false,
       menu: [
