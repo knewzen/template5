@@ -28,12 +28,6 @@
         works: [
           {background: "url('./src/assets/img/tk.jpg')",
           modalShow: false},
-          {background: "url('./src/assets/img/tk.jpg')",
-          modalShow: false},
-          {background: "url('./src/assets/img/tk.jpg')",
-          modalShow: false},
-          {background: "url('./src/assets/img/tk.jpg')",
-          modalShow: false},
         ]
       }
     },

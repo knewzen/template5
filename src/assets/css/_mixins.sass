@@ -1,1 +1,17 @@
 //main: main.sass
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+     -moz-border-radius: $radius
+      -ms-border-radius: $radius
+          border-radius: $radius
+
+=linear ($deg, $start-colour, $end-colour)
+    background-color: $start-colour
+    background-image: -webkit-gradient(linear, left $deg, left bottom, from($start-colour), to($end-colour))
+    background-image: -webkit-linear-gradient($deg, $start-colour, $end-colour)
+    background-image:    -moz-linear-gradient($deg, $start-colour, $end-colour)
+    background-image:     -ms-linear-gradient($deg, $start-colour, $end-colour)
+    background-image:      -o-linear-gradient($deg, $start-colour, $end-colour)
+    background-image:         linear-gradient($deg, $start-colour, $end-colour)
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#$start-colour', end-colourStr='#$end-colour')

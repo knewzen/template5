@@ -103,13 +103,31 @@ a
   justify-content: flex-end
   width: 100%
   z-index: 2
+  @media only screen and (max-width: $desktop)
+    display: none
+    position: fixed
+    top: 20%
+    width: 80vw
+    z-index: 1
+    padding-bottom: 20px
+    justify-content: space-around
+    +linear (45deg, rgb(190, 0, 230), rgb(198, 27, 124))
+    +border-radius(5px)
+
 
   .menu
     display: flex
     flex-direction: row-reverse
     justify-content: right
     margin-bottom: 10px
-
+    @media only screen and (max-width: $desktop)
+      justify-content: center
+      flex-flow: column-reverse
+      text-align: center
+      height: 80vw
+    a
+      padding: 40px
+      padding-bottom: 20px
 
 
 // Works
