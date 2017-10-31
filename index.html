@@ -11,16 +11,28 @@
     <div id="app"></div>
     <script src="/dist/build.js"></script>
     <script>
-    var menuButton = document.querySelector('#menuButton');
-    var menu = document.querySelector('.menu-container');
+      var menuButton = document.querySelector('#menuButton');
+      var menu = document.querySelector('.menu-container');
+      var menuItem = document.querySelector('.menu');
 
-    menuButton.addEventListener('click', function () {
-      menu.style.opacity = '0';
-      // menu.style.display = 'flex';
-      menu.style.top = '20%';
-      menu.style.opacity = '1';
-      menu.style.transform = 'translateY(0)';
-    });
+      // SHOW MENU
+      menuButton.addEventListener('click', function () {
+        menu.style.opacity = '0';
+        menu.style.top = '20%';
+        menu.style.opacity = '1';
+        menu.style.transform = 'translateY(0)';
+        menu.className += ' activeMenu';
+        event.stopPropagation();
+
+        // HIDE MENU
+        document.addEventListener('click', function () {
+          if(menu.classList.contains('activeMenu')){
+            menu.style.top = '-40vh';
+            menu.style.opacity = '0';
+          }
+        });
+      });
+
     </script>
   </body>
 </html>
