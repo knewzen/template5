@@ -14,6 +14,7 @@
       var menuButton = document.querySelector('#menuButton');
       var menu = document.querySelector('.menu-container');
       var menuItem = document.querySelector('.menu');
+      var navbar = document.querySelector('.navbar');
 
       // SHOW MENU
       menuButton.addEventListener('click', function () {
@@ -23,12 +24,13 @@
         menu.style.transform = 'translateY(0)';
         menu.className += ' activeMenu';
         event.stopPropagation();
-
+        navbar.style.bottom = '-80px';
         // HIDE MENU
         document.addEventListener('click', function () {
           if(menu.classList.contains('activeMenu')){
             menu.style.top = '-40vh';
             menu.style.opacity = '0';
+            navbar.style.bottom = '0';
           }
         });
       });
