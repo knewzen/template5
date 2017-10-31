@@ -3,7 +3,8 @@
 // Variables
 $gray: #888888
 $green: #02CCBA
-$orange: #ff8038
+$pink: rgb(190, 0, 230)
+$red: rgb(198, 27, 124)
 $dark: #222
 $dark-transparent: rgba(#cfcfcf, 0.2)
 $deep-blue: rgb(51, 93, 143)
@@ -22,7 +23,7 @@ a
   transition: all .2s
   border-bottom: 1px solid #02CCBA
   &:hover
-    color: rgb(250, 142, 29)
+    color: $gray
 /* Utilities */
 .container
   width: 80vw
@@ -125,9 +126,9 @@ a
       flex-flow: column-reverse
       text-align: center
       height: 80vw
-    a
-      padding: 40px
-      padding-bottom: 20px
+      a
+        padding: 40px
+        padding-bottom: 20px
 
 
 // Works
@@ -138,7 +139,7 @@ a
   flex-wrap: wrap
   width: 80vw
 .message
-  color: $orange !important
+  color: $pink !important
   position: absolute
   z-index: 2
   font-weight: 600
@@ -147,6 +148,7 @@ a
   @media only screen and (max-width: $desktop)
     display: none
 .message_2
+  font-weight: 900
   transform: rotate(90deg)
   transform-origin: left top 0
   position: absolute
@@ -161,7 +163,7 @@ a
   .inner
     color: $gray
   .outer
-    color: $orange
+    color: $pink
 
 .FeaturedWork
   width: 80vw
