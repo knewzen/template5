@@ -1,5 +1,7 @@
 <template>
   <div>
+
+    <button id="menuButton">menu</button>
     <div>
       <p class="message">Orci varius natoque penatibus <br>et magnis dis parturient montes, <br>nascetur ridiculus mus.</p>
     </div>
