@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-
+      <!-- HERO BACKGROUND -->
       <div id="particles-js" class="page-head-bg"></div>
-      <div class="page-head flex-center">
-          <div class="banner container">
-          <div class="logo" >
-            <img class="logo-img" :src="logo">
-            <div style="width: 100%" class="wordmark"></div>
-          </div>
+      <div class="page-head flex-center"></div>
+
+        <!-- LOGO -->
+        <div class="logo" >
+          <img class="logo-img" :src="logo">
+          <div style="width: 100%" class="wordmark"></div>
         </div>
-      </div> <!-- LOGO END -->
+       <!-- LOGO END -->
         <div class="portfolio">
           <Navigation/>
           <FeaturedWork/>
+
           <div class="title">
             <p><span class="inner">Portfolio <span class="outer">/</span> Showcase</span></p>
           </div>
+
           <Works/>
         </div>
   </div>
