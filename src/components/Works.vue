@@ -1,10 +1,6 @@
 <template>
   <div class="works">
-    <div class="message_3">
-      <p>
-          <span class="inner">Portfolio <span class="outer">/</span> Showcase</span>
-      </p>
-    </div>
+    
 
     <div  v-for="item in works"
           class="work-box box shadow flex-center FeaturedWorkBackground"
@@ -15,7 +11,6 @@
       </div>
     </div>
 
-  </div>
 </template>
 
 <script>

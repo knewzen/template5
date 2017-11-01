@@ -10,17 +10,12 @@
           </div>
         </div>
       </div> <!-- LOGO END -->
-
         <div class="portfolio">
-
-          <!-- Message -->
-          <div><p class="message">
-            Orci varius natoque penatibus <br>et magnis dis parturient montes, <br>nascetur ridiculus mus.
-          </p></div>
-
           <Navigation/>
-
           <FeaturedWork/>
+          <div class="title">
+            <p><span class="inner">Portfolio <span class="outer">/</span> Showcase</span></p>
+          </div>
           <Works/>
         </div>
   </div>

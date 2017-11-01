@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div>
-      <p class="message">Orci varius natoque penatibus <br>et magnis dis parturient montes, <br>nascetur ridiculus mus.</p>
-    </div>
 
     <div class="navbar">
       <div id="menuButton"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
