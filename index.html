@@ -39,6 +39,13 @@
         });
       });
 
+      // modalShow
+      var modal = document.querySelectorAll('.work-box');
+      for (i = 0; i < modal.length; i++) {
+        modal[i].addEventListener('click', function () {
+          this.style.height = '100vh';
+        });
+      }
     </script>
   </body>
 </html>

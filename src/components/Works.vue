@@ -6,7 +6,7 @@
           @click="item.modalShow = !item.modalShow">
           <div class="work-description">
             <h3 class="title subtitle">
-              <span class="inner2">Portfolio<br>
+              <span class="inner1">Portfolio<br>
                 <span class="outer" v-html="item.icon"></span>
                 <br>{{item.workType}}</span>
             </h3>
