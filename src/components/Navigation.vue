@@ -5,7 +5,7 @@
     </div>
 
     <div class="navbar">
-      <button id="menuButton"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+      <div id="menuButton"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
     </div>
 
 
