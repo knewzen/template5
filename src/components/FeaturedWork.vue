@@ -16,7 +16,7 @@
   export default {
     data () {
       return {
-        fWork: {background: "url('./src/assets/img/tk.jpg')"}
+        fWork: {background: "url('./src/assets/img/tk.png')"}
       }
     }
   }

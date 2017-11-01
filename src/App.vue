@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-      <div class="page-head-bg"></div>
+      <div id="particles-js" class="page-head-bg"></div>
       <div class="page-head flex-center">
           <div class="banner container">
           <div class="logo" >

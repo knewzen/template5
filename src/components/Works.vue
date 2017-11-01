@@ -26,7 +26,7 @@
       return  {
         show: false,
         works: [
-          {background: "url('./src/assets/img/tk.jpg')",
+          {background: "url('./src/assets/img/tk.png')",
           modalShow: false},
         ]
       }

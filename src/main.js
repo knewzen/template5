@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import Particles from 'particles.js'
-particlesJS.load('particles-js', '../assets/particles.json', function() {
+particlesJS.load('particles-js', './src/assets/particles/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
