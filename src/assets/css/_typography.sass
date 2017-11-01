@@ -1,3 +1,4 @@
+// main: main.sass
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800')
 
 $OpenSans: 'OpenSans', sans-serif
@@ -74,8 +75,24 @@ sub
   text-transform: uppercase !important
 .light
   h1, h2, h3, h4, h5, h6, p, ol, ul, li
-    font-weight: 200
 
 // COLORS
 p
   color: rgb(136, 136, 136)
+
+
+.title
+  font-weight: 600
+  z-index: 2
+  .inner
+    color: white
+  .inner2
+    color: $col-green
+  .inner3
+    color: $col-light-blue
+  .inner4
+    color: $col-red
+  .outer
+    color: $col-pink
+  .subtitle
+    font-size: 200%

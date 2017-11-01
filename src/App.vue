@@ -12,7 +12,7 @@
        <!-- LOGO END -->
         <div class="portfolio">
           <Navigation/>
-          <FeaturedWork/>
+          <WelcomeMessage/>
 
           <div class="title">
             <p><span class="inner">Portfolio <span class="outer">/</span> Showcase</span></p>
@@ -25,13 +25,13 @@
 
 <script>
 import Navigation from './components/Navigation.vue';
-import FeaturedWork from './components/FeaturedWork.vue'
+import WelcomeMessage from './components/WelcomeMessage.vue'
 import Works from './components/Works.vue'
 
 
 export default {
   name: 'app',
-  components: {Navigation, FeaturedWork, Works, Works},
+  components: {Navigation, WelcomeMessage, Works, Works},
   data () {
     return {
       logo: './src/assets/img/logo_w.svg',

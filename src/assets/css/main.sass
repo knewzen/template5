@@ -14,7 +14,7 @@ a
   transition: all .2s
   border-bottom: 1px solid #02CCBA
   &:hover
-    color: $gray
+    color: $col-gray
 /* Utilities */
 .container
   width: 80vw
@@ -36,6 +36,12 @@ a
 .shadow:hover
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16)
 
+.mobile
+  @media only screen and (min-width: $desktop)
+    display: none
+.desktop
+  @media only screen and (max-width: $desktop)
+    display: none
 /* Main */
 #app
   display: flex
@@ -81,7 +87,7 @@ a
   width: 100%
   display: flex
   width: 100%
-  z-index: 2
+  z-index: -1
   transition: all .6s
   @media only screen and (max-width: $desktop)
     position: fixed
@@ -89,10 +95,10 @@ a
     top: -20vh
     width: 80vw
     height: 50vh
-    z-index: 1
+    z-index: 3
     padding-bottom: 20px
     justify-content:  center
-    +linear (45deg, $dark-blue, $pink)
+    +linear (45deg, $col-dark-blue, $col-pink)
     +border-radius(5px)
   .menu
     display: flex
@@ -119,19 +125,13 @@ a
   display: flex
   flex-wrap: wrap
   width: 80vw
-.title
-  font-weight: 600
-  z-index: 2
-  .inner
-    color: white
-  .outer
-    color: $pink
-.FeaturedWork
+.welcome-message
   width: 80vw
   height: 52vh
   position: relative
   pointer-events: none
-.FeaturedWorkImg
+  top: 4vh
+.welcome-messageImg
   width: 100%
   height: 100%
   transition: all .6s
@@ -139,6 +139,7 @@ a
     transform: scale(1.01)
     @extend .shadow
 .text
+  color: white
   h4
     @media only screen and (max-width: 768px)
         display: none
@@ -173,6 +174,7 @@ a
       width: 32%
       margin-top: 4%
     .work-description
+      @extend .flex-center
       background: white
       width: 100%
       height: 100%
