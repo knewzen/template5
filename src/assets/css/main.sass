@@ -223,7 +223,7 @@ a
 // Works
 .works
   width: 100%
-  height: 400px
+  height: 200px
   display: flex
   flex-wrap: wrap
   // Desktop
@@ -236,17 +236,17 @@ a
       width: 32%
 
   .work-box
+    background-size: cover !important
+    background-position: center !important
     background: white
     width: 100%
+    height: 120%
     margin-top: 8%
     cursor: pointer
     transition: all .5s
     @extend .FeaturedWork
     &:hover
       transform: scale(1.03)
-      .work-description
-        clip-path: circle(80% at 50% 120%)
-        -webkit-clip-path: circle(80% at 50% 120%)
 
     // Desktop
     @media only screen and (min-width: $desktop)
@@ -256,7 +256,13 @@ a
       background: white
       width: 100%
       height: 100%
-      opacity: 0.9
-      clip-path: circle(50% at 50% 120%)
-      -webkit-clip-path: circle(50% at 50% 120%)
-      transition: all .4s ease-in-out
+      opacity: 0
+      // clip-path: circle(50% at 50% 100%)
+      // -webkit-clip-path: circle(50% at 50% 100%)
+      transition: all 0.6s
+    &:hover
+      .work-description
+        opacity: 0.8
+        +border-radius(3px)
+        // clip-path: circle(80% at 50% 120%)
+        // -webkit-clip-path: circle(80% at 50% 120%)

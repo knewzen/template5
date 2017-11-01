@@ -26,8 +26,22 @@
       return  {
         show: false,
         works: [
-          {background: "url('./src/assets/img/tk.png')",
-          modalShow: false},
+          {
+            background: "url('./src/assets/img/tk.png')",
+            modalShow: false
+          },
+          {
+            background: "url('./src/assets/img/tk2.png')",
+            modalShow: false
+          },
+          {
+            background: "url('./src/assets/img/tk3.gif')",
+            modalShow: false
+          },
+          {
+            background: "url('./src/assets/img/tk3.gif')",
+            modalShow: false
+          }
         ]
       }
     },
