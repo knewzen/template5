@@ -7,8 +7,8 @@
           <span class="inner5">web developer</span>
           <span class="mobile">.</span>
           <span class="desktop"><br>living and working in <span class="inner2">Warsaw</span>
-          and
-          <span class="inner3">Einburgh</span>.</span><br>
+          <!-- and
+          <span class="inner3">Einburgh</span>.--> </span><br> 
         <span style="border-bottom: 2px solid rgb(255, 131, 236);">Check my work and tell me how can I help.</span></h3>
       </div>
     </div>
