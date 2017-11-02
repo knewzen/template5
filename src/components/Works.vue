@@ -61,9 +61,7 @@
       test: function (item) {
         setTimeout(() => {
             item.modalShow = 1
-        }, 400);
-
-
+        }, 220);
       }
     }
   }

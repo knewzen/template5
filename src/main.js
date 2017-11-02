@@ -10,6 +10,7 @@ particlesJS.load('particles-js', './src/assets/particles/particles.json', functi
 import './assets/Font Awesome/fontAwesome.js';
 import './assets/css/main.min.css';
 
+
 new Vue({
   el: '#app',
   render: h => h(App)

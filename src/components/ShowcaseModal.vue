@@ -58,6 +58,7 @@
 
 .modal-container {
   width: 90vw;
+  height: 90vh;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -90,9 +91,6 @@
 
 .modal-enter {
   opacity: 0;
-
-    -webkit-transition-delay: 2s; /* Safari */
-    transition-delay: 2s;
 }
 
 .modal-leave-active {
