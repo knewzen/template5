@@ -2,17 +2,21 @@
   <div class="works">
     <div  v-for="item in works"
           class="work-box box shadow flex-center FeaturedWorkBackground"
-          :style="{ background: item.background}">
-          <div class="work-description">
+          :style="{ background: item.background}"
+          >
+          <div class="work-description" @click="test(item)">
             <h3 class="title subtitle">
-              <span class="inner1">Portfolio<br>
+              <span class="inner1" >Portfolio<br>
                 <span class="outer" v-html="item.icon"></span>
                 <br>{{item.workType}}</span>
             </h3>
           </div>
-          <div class="modal">
 
-          </div>
+            <!-- use the modal component, pass in the prop -->
+            <ShowcaseModal v-show="item.modalShow" @close="item.modalShow = false">
+              <h3 slot="header">{{item.name}}</h3>
+              <h3 slot="body" v-html="item.icon"></h3>
+            </ShowcaseModal>
       </div>
     </div>
 </template>
@@ -23,10 +27,9 @@
     components: {ShowcaseModal},
     data () {
       return  {
-        show: false,
         works: [
           {
-            name: 'modal 1',
+            name: 'Tumiladnie',
             background: "url('./src/assets/img/tk.png')",
             workType: 'www',
             icon: '<i class="fa fa-code" aria-hidden="true"></i>',
@@ -55,15 +58,20 @@
       }
     },
     methods: {
-      toggleModal: function () {
-          this.show = !this.show
-        }
+      test: function (item) {
+        setTimeout(() => {
+            item.modalShow = 1
+        }, 400);
+
+
+      }
     }
   }
 </script>
 
 <style>
-.work-box:not(.no-hover):hover {
-  transform: scale(1.03)
+.work-box:not(.noHover):hover {
+  transform: scale(1.03);
 }
+
 </style>

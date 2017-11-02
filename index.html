@@ -39,25 +39,26 @@
         });
       });
 
-      // resize box
+      // toggle class
       var box = document.querySelectorAll('.work-box');
+      document.querySelector('.modal-mask').addEventListener('click', function () {
+        box.classList.remove('noHover');
+      });
       for (i = 0; i < box.length; i++) {
         box[i].addEventListener('click', function () {
-          var openModal = this.querySelector('.modal');
+          if (!this.classList.contains('noHover')) {
+            this.className += ' noHover';
+          } else {
+            setTimeout(() => {
+                this.classList.remove('noHover');
+            }, 500);
 
-
-            if (openModal.classList.contains('modal-open')) {
-              openModal.classList.remove('modal-open');
-              setTimeout(function () {
-                this.classList.remove('no-hover');
-              }, 3000);
-
-            } else {
-              openModal.className += ' modal-open';
-              this.className += ' no-hover';
-            }
+          }
         });
-      }
+      };
+
+
+
     </script>
   </body>
 </html>

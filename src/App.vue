@@ -10,14 +10,14 @@
           <div style="width: 100%" class="wordmark"></div>
         </div>
        <!-- LOGO END -->
+
+       <WelcomeMessage/>
         <div class="portfolio">
           <Navigation/>
-          <WelcomeMessage/>
 
           <div class="title">
             <p><span class="inner">Portfolio <span class="outer">/</span> Showcase</span></p>
           </div>
-
           <Works/>
         </div>
   </div>
@@ -27,7 +27,6 @@
 import Navigation from './components/Navigation.vue';
 import WelcomeMessage from './components/WelcomeMessage.vue'
 import Works from './components/Works.vue'
-
 
 export default {
   name: 'app',
@@ -43,5 +42,4 @@ export default {
 </script>
 
 <style>
-
 </style>
