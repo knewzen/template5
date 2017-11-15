@@ -48,14 +48,14 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#FFFFFF",
+      "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 2,
-      "direction": "bottom",
+      "speed": 6,
+      "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",

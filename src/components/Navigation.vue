@@ -7,9 +7,9 @@
 
 
 
-    <div class="menu-container">
+    <!-- <div class="menu-container">
       <div class="menu"><a class="effect-shine" v-for="item in menu">{{item.name}}</a></div>
-    </div> <!-- Menu End -->
+    </div>  Menu End -->
   </div>
 </template>
 
